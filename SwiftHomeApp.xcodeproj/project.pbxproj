@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68118FE628A78EBE00E8A4F6 /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68118FE528A78EBE00E8A4F6 /* DeviceInfoView.swift */; };
+		68118FE828A7910B00E8A4F6 /* DeviceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68118FE728A7910B00E8A4F6 /* DeviceInfoViewModel.swift */; };
+		68118FEB28A79ADE00E8A4F6 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68118FEA28A79ADE00E8A4F6 /* UserDefaults.swift */; };
+		6813E09F28CBB8F200339BC5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6813E09E28CBB8F200339BC5 /* Alamofire */; };
+		6813E0A128CBB98700339BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6813E0A028CBB98700339BC5 /* GoogleService-Info.plist */; };
+		6813E0A328CBBA3A00339BC5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6813E0A228CBBA3A00339BC5 /* FirebaseAnalytics */; };
+		6813E0A528CBBA5900339BC5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6813E0A428CBBA5900339BC5 /* FirebaseMessaging */; };
+		68303A9428825D9600CEB91F /* SwiftHomeCredentials in Frameworks */ = {isa = PBXBuildFile; productRef = 68303A9328825D9600CEB91F /* SwiftHomeCredentials */; };
+		688FF76328BBAE8400636C1C /* CardReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FF76228BBAE8400636C1C /* CardReaderView.swift */; };
+		688FF76528BBAEA300636C1C /* CardReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FF76428BBAEA300636C1C /* CardReaderViewModel.swift */; };
+		688FF76828BBB0BE00636C1C /* SwiftHomeCredentials in Frameworks */ = {isa = PBXBuildFile; productRef = 688FF76728BBB0BE00636C1C /* SwiftHomeCredentials */; };
+		688FF7B528BBDB1F00636C1C /* TRETJapanNFCReader/Core in Frameworks */ = {isa = PBXBuildFile; productRef = 688FF7B428BBDB1F00636C1C /* TRETJapanNFCReader/Core */; };
+		688FF7B728BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa in Frameworks */ = {isa = PBXBuildFile; productRef = 688FF7B628BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa */; };
+		688FF7B928BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa/TransitIC in Frameworks */ = {isa = PBXBuildFile; productRef = 688FF7B828BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa/TransitIC */; };
+		688FF7BC28BCF73000636C1C /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FF7BB28BCF73000636C1C /* StatusView.swift */; };
+		688FF7BE28BCF73D00636C1C /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FF7BD28BCF73D00636C1C /* StatusViewModel.swift */; };
+		68B22225288842F700D5570C /* SwiftHomeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 68B22224288842F700D5570C /* SwiftHomeCore */; };
+		68F242A9285F6D7700C27E33 /* SwiftHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F242A8285F6D7700C27E33 /* SwiftHomeApp.swift */; };
+		68F242AB285F6D7700C27E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F242AA285F6D7700C27E33 /* ContentView.swift */; };
+		68F242AD285F6D7700C27E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F242AC285F6D7700C27E33 /* Assets.xcassets */; };
+		68F242B0285F6D7700C27E33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F242AF285F6D7700C27E33 /* Preview Assets.xcassets */; };
+		68F242B8285F6E0F00C27E33 /* AltimeterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F242B7285F6E0F00C27E33 /* AltimeterManager.swift */; };
+		68F242C0285F8A5300C27E33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F242BF285F8A5300C27E33 /* LocationManager.swift */; };
+		68F242CD2868227F00C27E33 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 68F242CC2868227F00C27E33 /* Vapor */; };
+		68F242DA28684FB100C27E33 /* SwiftExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 68F242D928684FB100C27E33 /* SwiftExtensions */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68118FE528A78EBE00E8A4F6 /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
+		68118FE728A7910B00E8A4F6 /* DeviceInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewModel.swift; sourceTree = "<group>"; };
+		68118FEA28A79ADE00E8A4F6 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		6813E0A028CBB98700339BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6813E0A628CC228700339BC5 /* SwiftHomeAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftHomeAppDebug.entitlements; sourceTree = "<group>"; };
+		688FF76228BBAE8400636C1C /* CardReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderView.swift; sourceTree = "<group>"; };
+		688FF76428BBAEA300636C1C /* CardReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderViewModel.swift; sourceTree = "<group>"; };
+		688FF76928BBD24400636C1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688FF7BB28BCF73000636C1C /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		688FF7BD28BCF73D00636C1C /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		68B22229288857FD00D5570C /* SwiftHomeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftHomeApp.entitlements; sourceTree = "<group>"; };
+		68F242A5285F6D7700C27E33 /* SwiftHomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F242A8285F6D7700C27E33 /* SwiftHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHomeApp.swift; sourceTree = "<group>"; };
+		68F242AA285F6D7700C27E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68F242AC285F6D7700C27E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68F242AF285F6D7700C27E33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68F242B7285F6E0F00C27E33 /* AltimeterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterManager.swift; sourceTree = "<group>"; };
+		68F242BF285F8A5300C27E33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68F242A2285F6D7700C27E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6813E09F28CBB8F200339BC5 /* Alamofire in Frameworks */,
+				68B22225288842F700D5570C /* SwiftHomeCore in Frameworks */,
+				68303A9428825D9600CEB91F /* SwiftHomeCredentials in Frameworks */,
+				688FF7B528BBDB1F00636C1C /* TRETJapanNFCReader/Core in Frameworks */,
+				688FF76828BBB0BE00636C1C /* SwiftHomeCredentials in Frameworks */,
+				688FF7B728BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa in Frameworks */,
+				68F242CD2868227F00C27E33 /* Vapor in Frameworks */,
+				688FF7B928BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa/TransitIC in Frameworks */,
+				6813E0A328CBBA3A00339BC5 /* FirebaseAnalytics in Frameworks */,
+				6813E0A528CBBA5900339BC5 /* FirebaseMessaging in Frameworks */,
+				68F242DA28684FB100C27E33 /* SwiftExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68118FE428A78EA200E8A4F6 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				68118FE528A78EBE00E8A4F6 /* DeviceInfoView.swift */,
+				68118FE728A7910B00E8A4F6 /* DeviceInfoViewModel.swift */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		68118FE928A79ACD00E8A4F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68118FEA28A79ADE00E8A4F6 /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		688FF76128BBAE7000636C1C /* CardReader */ = {
+			isa = PBXGroup;
+			children = (
+				688FF76228BBAE8400636C1C /* CardReaderView.swift */,
+				688FF76428BBAEA300636C1C /* CardReaderViewModel.swift */,
+			);
+			path = CardReader;
+			sourceTree = "<group>";
+		};
+		688FF7BA28BCF72300636C1C /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				688FF7BB28BCF73000636C1C /* StatusView.swift */,
+				688FF7BD28BCF73D00636C1C /* StatusViewModel.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		68F2429C285F6D7700C27E33 = {
+			isa = PBXGroup;
+			children = (
+				68F242A7285F6D7700C27E33 /* SwiftHomeApp */,
+				68F242A6285F6D7700C27E33 /* Products */,
+				68F242D2286835BE00C27E33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F242A6285F6D7700C27E33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F242A5285F6D7700C27E33 /* SwiftHomeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68F242A7285F6D7700C27E33 /* SwiftHomeApp */ = {
+			isa = PBXGroup;
+			children = (
+				6813E0A628CC228700339BC5 /* SwiftHomeAppDebug.entitlements */,
+				6813E0A028CBB98700339BC5 /* GoogleService-Info.plist */,
+				688FF76928BBD24400636C1C /* Info.plist */,
+				68118FE928A79ACD00E8A4F6 /* Extensions */,
+				68B22229288857FD00D5570C /* SwiftHomeApp.entitlements */,
+				68F242B9285F6E5600C27E33 /* Views */,
+				68F242B6285F6DFA00C27E33 /* Manager */,
+				68F242A8285F6D7700C27E33 /* SwiftHomeApp.swift */,
+				68F242AA285F6D7700C27E33 /* ContentView.swift */,
+				68F242AC285F6D7700C27E33 /* Assets.xcassets */,
+				68F242AE285F6D7700C27E33 /* Preview Content */,
+			);
+			path = SwiftHomeApp;
+			sourceTree = "<group>";
+		};
+		68F242AE285F6D7700C27E33 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68F242AF285F6D7700C27E33 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68F242B6285F6DFA00C27E33 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				68F242B7285F6E0F00C27E33 /* AltimeterManager.swift */,
+				68F242BF285F8A5300C27E33 /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		68F242B9285F6E5600C27E33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				688FF7BA28BCF72300636C1C /* Status */,
+				688FF76128BBAE7000636C1C /* CardReader */,
+				68118FE428A78EA200E8A4F6 /* DeviceInfo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68F242D2286835BE00C27E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68F242A4285F6D7700C27E33 /* SwiftHomeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F242B3285F6D7700C27E33 /* Build configuration list for PBXNativeTarget "SwiftHomeApp" */;
+			buildPhases = (
+				68F242A1285F6D7700C27E33 /* Sources */,
+				68F242A2285F6D7700C27E33 /* Frameworks */,
+				68F242A3285F6D7700C27E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHomeApp;
+			packageProductDependencies = (
+				68F242CC2868227F00C27E33 /* Vapor */,
+				68F242D928684FB100C27E33 /* SwiftExtensions */,
+				68303A9328825D9600CEB91F /* SwiftHomeCredentials */,
+				68B22224288842F700D5570C /* SwiftHomeCore */,
+				688FF76728BBB0BE00636C1C /* SwiftHomeCredentials */,
+				688FF7B428BBDB1F00636C1C /* TRETJapanNFCReader/Core */,
+				688FF7B628BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa */,
+				688FF7B828BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa/TransitIC */,
+				6813E09E28CBB8F200339BC5 /* Alamofire */,
+				6813E0A228CBBA3A00339BC5 /* FirebaseAnalytics */,
+				6813E0A428CBBA5900339BC5 /* FirebaseMessaging */,
+			);
+			productName = SwiftHomeApp;
+			productReference = 68F242A5285F6D7700C27E33 /* SwiftHomeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68F2429D285F6D7700C27E33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					68F242A4285F6D7700C27E33 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 68F242A0285F6D7700C27E33 /* Build configuration list for PBXProject "SwiftHomeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68F2429C285F6D7700C27E33;
+			packageReferences = (
+				68F242CB2868227F00C27E33 /* XCRemoteSwiftPackageReference "vapor" */,
+				68F242D828684FB100C27E33 /* XCRemoteSwiftPackageReference "SwiftExtensions" */,
+				68303A9228825D9500CEB91F /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */,
+				68B22223288842F700D5570C /* XCRemoteSwiftPackageReference "SwiftHomeCore" */,
+				688FF76628BBB0BE00636C1C /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */,
+				688FF7B128BBDB0000636C1C /* XCRemoteSwiftPackageReference "TRETJapanNFCReader" */,
+				688FF7C128CBB6BC00636C1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6813E09D28CBB8F200339BC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 68F242A6285F6D7700C27E33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68F242A4285F6D7700C27E33 /* SwiftHomeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68F242A3285F6D7700C27E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F242B0285F6D7700C27E33 /* Preview Assets.xcassets in Resources */,
+				68F242AD285F6D7700C27E33 /* Assets.xcassets in Resources */,
+				6813E0A128CBB98700339BC5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68F242A1285F6D7700C27E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688FF7BE28BCF73D00636C1C /* StatusViewModel.swift in Sources */,
+				688FF76528BBAEA300636C1C /* CardReaderViewModel.swift in Sources */,
+				688FF7BC28BCF73000636C1C /* StatusView.swift in Sources */,
+				68F242AB285F6D7700C27E33 /* ContentView.swift in Sources */,
+				688FF76328BBAE8400636C1C /* CardReaderView.swift in Sources */,
+				68F242C0285F8A5300C27E33 /* LocationManager.swift in Sources */,
+				68118FE628A78EBE00E8A4F6 /* DeviceInfoView.swift in Sources */,
+				68118FE828A7910B00E8A4F6 /* DeviceInfoViewModel.swift in Sources */,
+				68118FEB28A79ADE00E8A4F6 /* UserDefaults.swift in Sources */,
+				68F242B8285F6E0F00C27E33 /* AltimeterManager.swift in Sources */,
+				68F242A9285F6D7700C27E33 /* SwiftHomeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		68F242B1285F6D7700C27E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68F242B2285F6D7700C27E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68F242B4285F6D7700C27E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftHomeApp/SwiftHomeAppDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftHomeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 669226BDWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftHomeApp/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Read NFC cards";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = 1.0;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-home.SwiftHomeApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SwiftHomeDebug;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68F242B5285F6D7700C27E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftHomeApp/SwiftHomeApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftHomeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 669226BDWM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftHomeApp/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Read NFC cards";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = 1.0;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-home.SwiftHomeApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SwiftHomeDebug;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68F242A0285F6D7700C27E33 /* Build configuration list for PBXProject "SwiftHomeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F242B1285F6D7700C27E33 /* Debug */,
+				68F242B2285F6D7700C27E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F242B3285F6D7700C27E33 /* Build configuration list for PBXNativeTarget "SwiftHomeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F242B4285F6D7700C27E33 /* Debug */,
+				68F242B5285F6D7700C27E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6813E09D28CBB8F200339BC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 6.0.0;
+				minimumVersion = 5.0.0;
+			};
+		};
+		68303A9228825D9500CEB91F /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:u5-03/SwiftHomeCredentials.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		688FF76628BBB0BE00636C1C /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:u5-03/SwiftHomeCredentials.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		688FF7B128BBDB0000636C1C /* XCRemoteSwiftPackageReference "TRETJapanNFCReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/treastrain/TRETJapanNFCReader";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.0.0;
+				minimumVersion = 2.0.0;
+			};
+		};
+		688FF7C128CBB6BC00636C1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		68B22223288842F700D5570C /* XCRemoteSwiftPackageReference "SwiftHomeCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/u5-03/SwiftHomeCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		68F242CB2868227F00C27E33 /* XCRemoteSwiftPackageReference "vapor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/vapor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		68F242D828684FB100C27E33 /* XCRemoteSwiftPackageReference "SwiftExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/u5-03/SwiftExtensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6813E09E28CBB8F200339BC5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6813E09D28CBB8F200339BC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6813E0A228CBBA3A00339BC5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF7C128CBB6BC00636C1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6813E0A428CBBA5900339BC5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF7C128CBB6BC00636C1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		68303A9328825D9600CEB91F /* SwiftHomeCredentials */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68303A9228825D9500CEB91F /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */;
+			productName = SwiftHomeCredentials;
+		};
+		688FF76728BBB0BE00636C1C /* SwiftHomeCredentials */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF76628BBB0BE00636C1C /* XCRemoteSwiftPackageReference "SwiftHomeCredentials" */;
+			productName = SwiftHomeCredentials;
+		};
+		688FF7B428BBDB1F00636C1C /* TRETJapanNFCReader/Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF7B128BBDB0000636C1C /* XCRemoteSwiftPackageReference "TRETJapanNFCReader" */;
+			productName = TRETJapanNFCReader/Core;
+		};
+		688FF7B628BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF7B128BBDB0000636C1C /* XCRemoteSwiftPackageReference "TRETJapanNFCReader" */;
+			productName = TRETJapanNFCReader/FeliCa;
+		};
+		688FF7B828BBDB1F00636C1C /* TRETJapanNFCReader/FeliCa/TransitIC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 688FF7B128BBDB0000636C1C /* XCRemoteSwiftPackageReference "TRETJapanNFCReader" */;
+			productName = TRETJapanNFCReader/FeliCa/TransitIC;
+		};
+		68B22224288842F700D5570C /* SwiftHomeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68B22223288842F700D5570C /* XCRemoteSwiftPackageReference "SwiftHomeCore" */;
+			productName = SwiftHomeCore;
+		};
+		68F242CC2868227F00C27E33 /* Vapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F242CB2868227F00C27E33 /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = Vapor;
+		};
+		68F242D928684FB100C27E33 /* SwiftExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F242D828684FB100C27E33 /* XCRemoteSwiftPackageReference "SwiftExtensions" */;
+			productName = SwiftExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 68F2429D285F6D7700C27E33 /* Project object */;
+}
